@@ -118,3 +118,15 @@ The framework provides comprehensive logging:
 The training process uses FSDP (Fully Sharded Data Parallel) for efficient model training:
 - `fsdp_config_qwen.json`: Configuration for GPU training
 - `fsdp_config_qwen_cpu.json`: Configuration for CPU training
+
+
+## Citation
+If you find this work helpful, please consider citing it as follows:
+```ruby
+@article{wu2025reasonke,
+  title={Robust Knowledge Editing via Explicit Reasoning Chains for Distractor-Resilient Multi-Hop QA},
+  author={Wu, Yuchen and Ding, Liang and Shen, Li and Tao, Dacheng},
+  journal={arXiv preprint},
+  year={2025}
+}
+```
