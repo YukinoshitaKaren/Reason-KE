@@ -45,12 +45,8 @@ python generate/get_mquake_reason.py
 Fine-tune the model using supervised fine-tuning:
 
 ```bash
-# Using GPU
 bash train/sft.sh
 
-# Using CPU
-bash train/sft.sh --cpu
-```
 
 ### 3. Model Evaluation
 
@@ -104,8 +100,8 @@ The evaluation results are saved in JSON format with the following structure:
         "id": "sample_id",
         "new_answer": "expected_answer",
         "result": "model_answer",
-        "flag": 1/0,
-        "processing_time": time_in_seconds
+        "flag": "1/0",
+        "processing_time": "time_in_seconds"
     }
 ]
 ```
