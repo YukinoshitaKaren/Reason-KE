@@ -1,4 +1,4 @@
-# ReasonKE: Knowledge Editing Evaluation Framework
+# Reason-KE: Robust Knowledge Editing via Explicit Reasoning Chains for Distractor-Resilient Multi-Hop QA
 
 ReasonKE is a comprehensive evaluation framework for assessing the reasoning capabilities of language models in knowledge editing tasks. It focuses on evaluating how well models can handle knowledge updates and maintain consistency in their reasoning.
 
