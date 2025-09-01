@@ -1,0 +1,16 @@
+torch>=2.0.0
+transformers>=4.30.0
+tqdm>=4.65.0
+numpy>=1.24.0
+json5>=0.9.10
+argparse>=1.4.0
+logging>=0.5.1.2
+accelerate>=0.20.0
+bitsandbytes>=0.41.0
+peft>=0.4.0
+datasets>=2.12.0
+scipy>=1.10.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+einops>=0.6.1
+safetensors>=0.3.1 
