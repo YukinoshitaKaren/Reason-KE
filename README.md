@@ -1,6 +1,6 @@
 # Reason-KE: Robust Knowledge Editing via Explicit Reasoning Chains for Distractor-Resilient Multi-Hop QA
 
-ReasonKE is a comprehensive evaluation framework for assessing the reasoning capabilities of language models in knowledge editing tasks. It focuses on evaluating how well models can handle knowledge updates and maintain consistency in their reasoning.
+We introduce \textbf{Reason-KE}, an \textit{end‐to‐end reasoning-chain-based editing framework} that steers a pretrained LLM through four structured stages—fact acknowledgment, relevance determination, selective application, and final reasoning—to filter distractors \textit{in a single pass}. Trained on MQuAKE‐CF with up to four irrelevant facts, Reason-KE elevates Qwen2.5‐7B’s multi‐hop QA accuracy to 90.2\% (↑17.6 pp) while suffering merely a 6.3\% drop under heavy distraction and <1\% when answers are leaked. Our quantitative analysis confirms Reason-KE’s resilience and efficiency, establishing a new state-of-the-art for reliable LLM knowledge updates.
 
 ## Requirements
 
