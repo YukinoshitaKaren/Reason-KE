@@ -85,21 +85,6 @@ python eval/eval_rasoning.py \
 - Training parameters can be configured in `train/sft.sh`
 - FSDP (Fully Sharded Data Parallel) configurations are available in JSON files
 
-## Evaluation Process
-
-1. **Data Loading**: Loads the evaluation dataset containing questions and knowledge updates
-2. **Fact Processing**: 
-   - Extracts facts from the dataset
-   - Computes embeddings for fact retrieval
-3. **Model Evaluation**:
-   - Processes each sample
-   - Retrieves relevant facts
-   - Generates responses
-   - Evaluates accuracy
-4. **Results**: Saves detailed evaluation results including:
-   - Multi-hop accuracy
-   - Processing times
-   - Individual sample results
 
 ## Output Format
 
