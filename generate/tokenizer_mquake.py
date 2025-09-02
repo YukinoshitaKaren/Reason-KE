@@ -38,7 +38,7 @@ def process_single_example(example, tokenizer):
     return {"text": texts, "id": ids}
 
 if __name__ == "__main__":
-    input_file = "data/MQuAKE-CF.json"
+    input_file = "data/MQuAKE-CF-cot.json"
     input_name = input_file.split('/')[-1].rstrip('.json') + '_tok'
     
     with open(input_file, "r", encoding="utf-8") as f:
