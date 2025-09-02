@@ -37,10 +37,17 @@ pip install -r requirements.txt
 Generate reasoning data for MQuAKE dataset:
 
 ```bash
-python generate/get_mquake_reason.py
+python generate/get_mquake_reason.py 
+```
+Then tokenizer the generated data
+
+```bash
+python generate/tokenizer_mquake.py 
 ```
 
 ### 2. Model Training
+Please download the training data from [HuggingFace](https://huggingface.co/datasets/YukinoKaren/Reason-KE-train-data). 
+Moreover, a demo model has been made available for download: [Reason-KE-Demo](https://huggingface.co/YukinoKaren/Reason-KE),
 
 Fine-tune the model using supervised fine-tuning:
 
