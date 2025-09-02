@@ -53,7 +53,7 @@ Fine-tune the model using supervised fine-tuning:
 
 ```bash
 bash train/sft.sh
-
+```
 
 ### 3. Model Evaluation
 
