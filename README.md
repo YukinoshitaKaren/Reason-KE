@@ -3,7 +3,7 @@
 We introduce **Reason-KE**, an _end‐to‐end reasoning-chain-based editing framework_ that steers a pretrained LLM through four structured stages—fact acknowledgment, relevance determination, selective application, and final reasoning—to filter distractors _in a single pass_. Trained on MQuAKE‐CF with up to four irrelevant facts, Reason-KE elevates Qwen2.5‐7B’s multi‐hop QA accuracy to 90.2% (↑17.6 pp) while suffering merely a 6.3% drop under heavy distraction and <1% when answers are leaked. Our quantitative analysis confirms Reason-KE’s resilience and efficiency, establishing a new state-of-the-art for reliable LLM knowledge updates.
 
 <div align="center">
-    <img width="80%" alt="image" src="https://github.com/YukinoshitaKaren/Reason-KE/blob/main/asset/reasonKE.png">
+    <img width="90%" alt="image" src="https://github.com/YukinoshitaKaren/Reason-KE/blob/main/asset/reasonKE.png">
 </div>
 
 ## Requirements
