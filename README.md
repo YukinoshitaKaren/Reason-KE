@@ -1,7 +1,12 @@
 # Reason-KE: Robust Knowledge Editing via Explicit Reasoning Chains for Distractor-Resilient Multi-Hop QA
-✨ **Coming Soon:** The verified code and report for our upcoming **Reason-KE++** will be released shortly!
 
-We introduce **Reason-KE**, an _end‐to‐end reasoning-chain-based editing framework_ that steers a pretrained LLM through four structured stages—fact acknowledgment, relevance determination, selective application, and final reasoning—to filter distractors _in a single pass_. Trained on MQuAKE‐CF with up to four irrelevant facts, Reason-KE elevates Qwen2.5‐7B’s multi‐hop QA accuracy to 90.2% (↑17.6 pp) while suffering merely a 6.3% drop under heavy distraction and <1% when answers are leaked. Our quantitative analysis confirms Reason-KE’s resilience and efficiency, establishing a new state-of-the-art for reliable LLM knowledge updates.
+✨ **NEW:** [**Reason-KE++**](./ReasonKE++/) is now available! We identify that SFT-based methods suffer from a "faithfulness gap"—optimizing for format mimicry rather than sound reasoning. Reason-KE++ solves this via an **SFT+RL framework** with a **Stage-aware Reward** mechanism that provides dense supervision for intermediate reasoning steps. Our process-aware approach achieves **95.48% on MQuAKE-CF-3k (+5.28%)**, setting a new SOTA.
+
+<div align="center">
+    <img width="90%" alt="Reason-KE++" src="https://github.com/YukinoshitaKaren/Reason-KE/blob/main/asset/reasonKE++.png">
+</div>
+
+We introduce **Reason-KE**, an _end‐to‐end reasoning-chain-based editing framework_ that steers a pretrained LLM through four structured stages—fact acknowledgment, relevance determination, selective application, and final reasoning—to filter distractors _in a single pass_. Trained on MQuAKE‐CF with up to four irrelevant facts, Reason-KE elevates Qwen2.5‐7B's multi‐hop QA accuracy to 90.2% (↑17.6 pp) while suffering merely a 6.3% drop under heavy distraction and <1% when answers are leaked. Our quantitative analysis confirms Reason-KE's resilience and efficiency, establishing a new state-of-the-art for reliable LLM knowledge updates.
 
 <div align="center">
     <img width="90%" alt="image" src="https://github.com/YukinoshitaKaren/Reason-KE/blob/main/asset/reasonKE.png">
@@ -31,6 +36,7 @@ pip install -r requirements.txt
 │   ├── sft.sh        # Training shell script
 │   ├── fsdp_config_qwen.json      # FSDP config for Qwen model
 │   └── fsdp_config_qwen_cpu.json  # CPU-specific FSDP config
+├── ReasonKE++/         # 🚀 PPO-enhanced version (see ReasonKE++/README.md)
 ├── README.md
 └── requirements.txt
 ```
@@ -116,6 +122,32 @@ The training process uses FSDP (Fully Sharded Data Parallel) for efficient model
 - `fsdp_config_qwen.json`: Configuration for GPU training
 - `fsdp_config_qwen_cpu.json`: Configuration for CPU training
 
+---
+
+## 🚀 Reason-KE++
+
+**Reason-KE++** extends Reason-KE with **PPO-based reinforcement learning** for further performance improvements. It combines SFT (Supervised Fine-Tuning) with PPO training using the [verl](https://github.com/volcengine/verl) framework.
+
+### Key Features
+- **SFT + PPO Training Pipeline**: Two-stage training for optimal results
+- **Custom Reward Function**: Task-specific reward design for knowledge editing
+- **Scalable Training**: Support for multi-GPU and multi-node training
+
+### Quick Start
+
+```bash
+cd ReasonKE++
+
+# Install dependencies
+pip install -r requirements.txt
+pip install verl  # For PPO training
+
+# See ReasonKE++/README.md for detailed instructions
+```
+
+📖 For full documentation, see [**ReasonKE++/README.md**](./ReasonKE++/README.md)
+
+---
 
 ## Citation
 If you find this work helpful, please consider citing it as follows:
