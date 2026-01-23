@@ -150,7 +150,7 @@ pip install verl  # For PPO training
 ---
 
 ## Citation
-If you find this work helpful, please consider citing them as follows:
+If you find this work helpful, please consider citing it as follows:
 ```ruby
 @article{wu2025reasonke++,
   title={Reason-KE++: Aligning the Process, Not Just the Outcome, for Faithful LLM Knowledge Editing},
@@ -160,7 +160,7 @@ If you find this work helpful, please consider citing them as follows:
 }
 ```
 ```ruby
-@@inproceedings{wu2025reasonke,
+@inproceedings{wu2025reasonke,
   title={Robust Knowledge Editing via Explicit Reasoning Chains for Distractor-Resilient Multi-Hop QA},
   author={Wu, Yuchen and Ding, Liang and Shen, Li and Tao, Dacheng},
   booktitle={Findings of EMNLP},
